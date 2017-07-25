@@ -1,1 +1,1 @@
-# eze-io.github.io
+# Static webpage with various of resources and files
