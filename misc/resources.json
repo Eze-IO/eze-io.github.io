@@ -1,8 +1,8 @@
 {
   "title": "resources",
   "items": [{
-    "Fonts":"https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Lato",
-    "Copyright Tips Webpage":"http://cot-digm-web.cougarnet.uh.edu/~eaahuna/2351/week7/",
+    "Material Message Box | 64-bit":"https://eze-io.github.io/misc/package/MaterialMessageBox_64.zip",
+	"Material Message Box | 32-bit":"https://eze-io.github.io/misc/package/MaterialMessageBox_84.zip",
     "Magazine Cover":"https://eze-io.github.io/design/magazine.jpg"
   }]
 }
