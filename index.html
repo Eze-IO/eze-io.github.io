@@ -50,13 +50,14 @@ nav {
 
 @media screen and (max-width: 31em) { 
 	#search_box {
+		margin: 3% !important;
 		display: none;
 	}
 }
 
 @media screen and (max-width: 28em) {
 	nav {
-		min-height: 120px !important;
+		min-height: 100px !important;
 	}
 	nav div {
 		position: relative;
@@ -73,6 +74,7 @@ nav {
 		font-size: 150%;
 	}
 	#search_box {
+		margin: 3% !important;
 		display: block;
 	}
 	#search {
@@ -80,6 +82,16 @@ nav {
 	}
 	.tooltip:hover:before {
 		left: 100% !important;
+	}
+}
+
+@media screen and (max-width: 20em) {
+	nav {
+		min-height: 125px !important;
+	}
+	section {
+		font-size: 50%;
+		margin-top: 150px !important;
 	}
 }
 
@@ -182,11 +194,13 @@ section {
   position: relative;
   margin: auto;
   width: 85%;
+  min-width: 425px;
   height: 9000px;
   min-height: 100%;
   font-family: 'Lato', sans-serif;
   background-color: white;
   margin-top: 75px;
+  font-size: 70%;
 }
 
 #links {
@@ -194,7 +208,7 @@ section {
   color: #fff;
   border-radius: 5px;
   padding: 6%;
-  font-size: 70%;
+  font-size: 60% !important;
   height: 150px;
   min-height: 120px;
   max-height: 160px;
@@ -212,7 +226,13 @@ section {
 }
 
 #links h4 {
+  font-size: 50% !important;
   cursor: url('data:image/png;base64,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'), help;
+}
+
+#error {
+  color: #E53935 !important;
+  text-shadow: -2px -1px white, -1px -0px #424242;
 }
 
 /* Footer */
@@ -246,17 +266,33 @@ footer {
   text-shadow: -2px -1px #E91E63, -1px -0px #424242;
 }
 </style>
+<noscript>
+	<style>
+	@media screen and (max-width: 31em) { 
+		nav {
+			height: 50px !important;
+			max-height: 80px !important;
+			min-height: 40px !important;
+		}
+		#search_box {
+			display: none;
+		}
+		section {
+			margin-top: 80px !important;
+		}
+	}
+	</style>
+</noscript>
 <title>Eze-IO | Resources</title>
 <meta name="author" content="Eze Ahuna"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 <link rel="icon" sizes="24x24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALISURBVEiJrZVNbExRFMd/586bmc60SlpNO1o0pIQ0kQjSWEgEQWLFVuJ7gYhEglU3JCJ2IulKsBCxYmUhEaIiZdKFiu8uCB1FlemYD28+7rHwtNXOqKf+yU3Oefee8z//c9+9F1Vl/AAiwG3A8fxLQLtnHwJ2TIz505j8AXYClz17KfACMEAIGADm+CEwTEYj8MGz64HPqmqBKOAAI2ViKqOMgkYgAYQ8/xmwxLMvArumq2DEa0nU8xMeKV6LGsvE+FKwnbE9aANeAQIEgXdAzI8CAVqA2eM4O7xKB4C5QAyIA1XAOuDGhBo/q+pAJQHiiGTnBavyvmSPw9vC91DB2mileQmIFF8uWRXwkzQWDGEQgiKE+7pLJdXNwCJ+qo6r6uAoAaCLwxULKIvOpvl8LObZP7uZ2r57pTZMsgOn6h22GKcYtOj5NBxTVVcCIkV32RpfCsYj8qjbXqXG3KVQasAENhDkNNncHYoPk2rXOv+a+BcUdB/pp2n0ykxkyxlyy68xI9JPZkVIZEe5c+CPQGBYbbureuqT2tV59PhRMoUTRGtqkcPTJpgIF84/p2RbMORg4X8nAJosOF7vdZSgO52kc/D1tDKLSKwaObuVkNyjQBh6Rjd5sJAnUXD9JwWiYobD8CUAC9YTtEeImI2kMkm0c9p/kSjSS23de7SuDuExJbOJVKaAnFS1vaMEVcbg/rzgfGMvmdRzSoEsGqhBnnxFD6raODB2XXdU13I/PYKr1ldyFbSH4s4kujAP1cNqV6pq/Ne8CYlk+90cjU6ILTPr2fP2JQr8jZZ+N0dQJKuq11X1o/fy/QYTNaanayhhAc61tLFtVgMPMiluffs6JUHXUMJGjen50xoBWquN6dtdF6s50NBs2sKRv6q8ayhhL3wZTGesXaaqbyou9l6u1nrHuRkxJhUQKU41Isak6h3nJtA61Yv2A5pT7t2k7X8nAAAAAElFTkSuQmCC"/>
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Lato" rel="stylesheet">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
   <main>
     <nav>
-      <h2 id="hd_text">Click on any of the links below</h2>
+      <a id="hd_text" href="index.html">Click on any of the links below</a>
 	  <div style="display:none;" id="size_box" tip="Press enter to search for a resource" class="tooltip">
 		<span id="search_box">
 			<input maxlength="50" id="search"/>
@@ -268,7 +304,6 @@ footer {
 	  <noscript>
 		<h1 style="text-align:center;font-size:300%;text-shadow: -2px -1px grey, -4px -2px white;">No resources or links are available!<h1>
 	  </noscript>
-    <a id="links" href="http://www.google.com" target="_blank"/><i class="fa fa-camera-retro fa-3x"><h4>Setup.exe</h4></i></a>
     </section>
     <footer>
       <div id="web">
@@ -280,23 +315,223 @@ footer {
     </footer>
   </main>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/110443b741.js"></script>
 <script>
 document.body.onload = function() {
 	document.getElementById("size_box").style.display = "block";
 	var sec = document.getElementById("items");
 	sec.style.cssText = "cursor: url('data:image/png;base64,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'), wait;";
-	sec.innerHTML= "<h1 style='color:#E1BEE7;font-size:350%'>Loading....<h1>";
-	sec.style.cssText = "display: grid;grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));grid-gap: 15px;";
+	sec.innerHTML= "<i style='margin:auto;' class='fa fa-refresh fa-spin fa-5x fa-fw'></i>";
 	function itemLink(source, name){
 		if(source == null || source.length <= 0)
-			return;
+			return null;
 		if(name == null || name.length <= 0)
-			return;
+			return null;
+		var classfile = "fa fa-file-o";
 		var template = "<a id='links' href='[SOURCE]' target='_blank'/><i class='[ICON-TYPE] fa-3x'><h4>[NAME]</h4></i></a>";
 		template = template.replace("[SOURCE]", source).replace("[NAME]", name);
+		$.ajax({
+			type: "GET",
+			url: source,
+			async: false,
+			success: function(rep, status, xhr) {
+				var header = function(type) 
+				{
+					try{
+						var r = false;
+						var ct = xhr.getResponseHeader("content-type") || "";
+						if(ct.toLowerCase().indexOf(type) > -1) { r = true; }
+						return r;
+					}
+					catch(e) 
+					{
+						console.log("Error getting file type: "+ e.message);
+						return false;
+					}
+				};
+				
+				if(header("text")) 
+				{
+					classfile = "fa fa-file-text-o";
+				}
+				
+				if(header("image") || header("photo"))
+				{
+					classfile = "fa fa-file-image-o";
+				}
+				
+				if(header("pdf")) 
+				{
+					classfile = "fa fa-file-pdf-o";
+				}
+				
+				if(header("excel")) 
+				{
+					classfile = "fa fa-file-excel-o";
+				}
+				
+				if(header("word")) 
+				{
+					classfile = "fa fa-file-word-o";
+				}
+				
+				if(header("powerpoint")) 
+				{
+					classfile = "fa fa-file-powerpoint-o";
+				}
+				
+				if(header("java") || header("html") || header("css") || header("json") || header("xml"))
+				{
+					classfile = "fa fa-file-code-o";
+				}
+				
+				if(header("video")) 
+				{
+					classfile = "fa fa-file-video-o";
+				}
+				
+				if(header("audio")) 
+				{
+					classfile = "fa fa-file-audio-o";
+				}
+				
+				if(header("rar") || header("zip") || header("gzip") || header("tar") || header("7z"))
+				{
+					classfile = "fa fa-file-archive-o";
+				}
+			},
+			error: function(e) {
+              console.log("Item URL failed to respond");
+			  return null;
+            }
+		});
+		template = template.replace("[ICON-TYPE]", classfile);
 		return template;
 	}
+	function searchFor(query){
+		sec.innerHTML= "<i style='margin:auto;' class='fa fa-refresh fa-spin fa-5x fa-fw'></i>";
+		var list = [];
+		$.ajax({
+            type: 'GET',
+            url: 'https://eze-io.github.io/misc/resources.json',
+            dataType: 'text',
+            success: function (data) {
+				try {
+					var json = JSON.parse(data);
+					if($.isArray(json.items)) {
+						$.each(json.items, function (i, ob) {
+							$.each(ob, function (ind, obj) {
+								if(query != null) { query = query.toLowerCase(); }
+								if(!ind) { throw new Error("Unknown file name!");}
+								if(!obj) { throw new Error("Cannot find URL to file or resource, URL might be empty!");}
+								var _ind = ind.toLowerCase();
+								var _obj = obj.toLowerCase();
+									if(query == null || query.length <= 0) 
+									{
+										list.push(itemLink(obj, ind));
+									}
+									else 
+									{
+										var _str = query.split(" ");
+										if(_str.isArray)
+										{
+											for(str in _str)
+											{
+												if(_ind.indexOf(str) > -1)
+												{
+													list.push(itemLink(obj, ind));
+												}
+												else
+												{
+													if(_obj.indexOf(str) > -1) 
+													{
+														list.push(itemLink(obj, ind));
+													}
+												}
+											}
+										}
+										else
+										{
+											if(_ind.indexOf(query) > -1)
+											{
+												list.push(itemLink(obj, ind));
+											}
+											else
+											{
+												if(_obj.indexOf(query) > -1) 
+												{
+													list.push(itemLink(obj, ind));
+												}
+											}
+										}
+									}
+									});
+								});
+					}
+					else
+					{
+						console.log("No items are available");
+							setTimeout(function(){
+							$("#items").html("<h1>No resource items are available</h1>");
+						}, 1050);
+					}
+					if(list.length > 0)
+					{
+						var content = "";
+						if($.isArray(list)) {
+							for(var item in list) {
+								content += list[item];
+							}
+						}
+						$("#items").html(content);
+					}
+					else 
+					{
+						console.log("No items are available");
+							setTimeout(function(){
+							if(query != null || query.length > 0) 
+							{
+								$("#items").html("<h1>Search results : no item matched '"+ query +"'</h1>");
+							}
+							else 
+							{
+								$("#items").html("<h1>No resource items are available</h1>");
+							}
+						}, 1050);
+						return;
+					}
+					sec.style.cssText = "display: grid;grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));grid-gap: 15px;";
+					console.log("Successfully retrieved links!");
+				} catch(e) {
+						console.log("Failed to get project items: "+ e.message);
+						setTimeout(function(){
+							sec.style.cssText = "cursor: url('data:image/png;base64,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'), auto;";
+							$("#items").html("<h1 id='error'>Error failed to get resource items</h1>");
+						}, 1050);
+				}
+            },
+            error: function(e) {
+              console.log("Failed to get project items: "+ e.message);
+              setTimeout(function(){
+			    sec.style.cssText = "cursor: url('data:image/png;base64,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'), auto;";
+                $("#items").html("<h1 id='error'>Error failed to get resource items</h1>");
+              }, 1050);
+            }
+        });
+	}
+	searchFor(null);
+	$("#search_box").click(function(e){
+        var e = jQuery.Event("keydown");
+		e.which = 13; // # Some key code value
+		$("#search").trigger(e);
+    });
+	$(document).on("keypress", "#search", function(e) {
+     if(e.which == 13) {
+         var x = $("#search").val();
+		 searchFor(x);
+     }
+	});
 }
 </script>
 </html>
