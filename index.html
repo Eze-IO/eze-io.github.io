@@ -211,9 +211,10 @@ section {
 	
 #items {
     display: -webkit-grid;
-    -webkit-grid-columns: repeat(auto-fit, minmax(125px, 2fr));
-    -webkit-grid-rows: repeat(auto-fit, minmax(250px, 2fr));
+    -webkit-grid-columns: auto 2fr;
+    -webkit-grid-rows: auto 125px auto 2fr;
     -webkit-grid-gap: 10%;
+    align-items: center;
 }
 	
 #links {
