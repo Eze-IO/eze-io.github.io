@@ -376,7 +376,7 @@ document.body.onload = function() {
 					classfile = "fa fa-file-text-o";
 				}
 				
-				if(header("image") || header("photo"))
+				if(header("image") || header("photo") || header("png") || header("ico"))
 				{
 					classfile = "fa fa-file-image-o";
 				}
@@ -406,12 +406,12 @@ document.body.onload = function() {
 					classfile = "fa fa-file-code-o";
 				}
 				
-				if(header("video")) 
+				if(header("video") || header("mp4") || header("mov") || header("avi")) 
 				{
 					classfile = "fa fa-file-video-o";
 				}
 				
-				if(header("audio")) 
+				if(header("audio") || header("wav") || header("mp3")) 
 				{
 					classfile = "fa fa-file-audio-o";
 				}
