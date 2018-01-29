@@ -1,3 +1,3 @@
 # Static webpage with various of resources and files
-[link]("google.com"){:target="_blank"}
-The Link [Registration](eze-io.github.io)
+
+<a href="eze-io.github.io" target="_blank">Click here to open the webpage!</a>
