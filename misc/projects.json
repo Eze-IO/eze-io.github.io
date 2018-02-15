@@ -2,10 +2,8 @@
   "title": "Eze's Projects",
   "error": true,
   "projects": [{
-    "Realtor Company Webpage":"http://cot-digm-web.cougarnet.uh.edu/~eaahuna/2351/week4b/",
-    "Copyright Tips Webpage":"http://cot-digm-web.cougarnet.uh.edu/~eaahuna/2351/week7/",
+    "Simple Search Box (JavaScript)":"eze-io.github.io",
     "Magazine Cover":"https://eze-io.github.io/design/magazine.jpg",
-    "Movie Poster":"https://eze-io.github.io/design/movie-poster.jpg",
-	"Cereal Box Design":"https://eze-io.github.io/design/cereal-box.jpg"
+    "Movie Poster":"https://eze-io.github.io/design/movie-poster.jpg"
   }]
 }
