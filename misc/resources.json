@@ -1,8 +1,8 @@
 {
   "title": "resources",
   "items": [{
-	"Eze-IO Logo":"https://eze-io.github.io/misc/package/logo.svg",
-	"Air Horn":"https://eze-io.github.io/misc/package/Air_Horn.mp3",
-    "Magazine Cover":"https://eze-io.github.io/design/magazine.jpg"
+	"Eze-IO Logo":"https://eze-io.github.io/misc/resources/logo.svg",
+	"Air Horn":"https://eze-io.github.io/misc/resources/Air_Horn.mp3",
+    "Magazine Cover":"https://eze-io.github.io/misc/resources/magazine.jpg"
   }]
 }

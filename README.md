@@ -19,7 +19,7 @@ Resources are loaded from [`misc/resources.json`](misc/resources.json). Add a `"
 {
   "title": "resources",
   "items": [{
-    "Eze-IO Logo": "https://eze-io.github.io/misc/package/logo.svg",
+    "Eze-IO Logo": "https://eze-io.github.io/misc/resources/logo.svg",
     "My New File": "https://eze-io.github.io/path/to/file.pdf"
   }]
 }
