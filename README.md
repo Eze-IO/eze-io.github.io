@@ -1,4 +1,4 @@
-# Eze-IO Resources
+# Responsive Webpage Demo
 
 A responsive static webpage that lists files, designs and media as searchable cards.
 
